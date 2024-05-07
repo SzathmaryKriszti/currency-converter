@@ -1,11 +1,13 @@
 package com.appretice.currencyconverter.dto;
 
+import com.appretice.currencyconverter.domain.Currency;
+
 public class Money {
 
     private Double amount;
-    private String currency;
+    private Currency currency;
 
-    public Money(Double amount, String currency) {
+    public Money(Double amount, Currency currency) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -18,11 +20,11 @@ public class Money {
         this.amount = amount;
     }
 
-    public String getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
-    public void setCurrency(String currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 }
