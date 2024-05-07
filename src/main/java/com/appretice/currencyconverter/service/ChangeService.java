@@ -10,9 +10,11 @@ public class ChangeService {
 
 
     public ConvertItem convert(Double amount, Currency from, Currency to) {
-        Money baseMoney = new Money(amount,Currency.USD);
+        Money baseMoney = new Money(amount, from);
+        double convertedItem = 0.0;
 
-        Double convertedItem =  amount * to.getValue();
+        convertedItem = (amount * to.getValue()) / from.getValue();
+
         Money result = new Money(convertedItem, to);
         return new ConvertItem(baseMoney, result);
     }

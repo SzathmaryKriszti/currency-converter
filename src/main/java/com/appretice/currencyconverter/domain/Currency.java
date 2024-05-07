@@ -2,16 +2,16 @@ package com.appretice.currencyconverter.domain;
 
 public enum Currency {
 
-    EUR(0.91),
-    GBP(0.76),
-    CAD(1.28),
-    AUD(1.37),
-    JPY(115.08),
-    CNY(6.35),
-    INR(75.28),
-    BRL(4.93),
-    ZAR(15.68),
-    RUB(75.65),
+    EUR(0.93),
+    GBP(0.80),
+    CAD(1.37),
+    AUD(1.52),
+    JPY(154.15),
+    CNY(7.22),
+    INR(83.50),
+    BRL(5.08),
+    ZAR(18.47),
+    RUB(91.09),
     USD(1);
 
     private double value;
